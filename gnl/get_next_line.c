@@ -1,4 +1,4 @@
-**************************************************************************
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
@@ -6,7 +6,7 @@
 /*   By: dsoroko <dsoroko@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 09:44:39 by dsoroko           #+#    #+#             */
-/*   Updated: 2022/09/28 09:50:32 by dsoroko          ###   ########.fr       */
+/*   Updated: 2022/10/11 10:31:45 by dsoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_strlen(char *str)
 {
 	int	i;
-
+// 
 	i = 0;
 	while (str[i])
 		i++;
@@ -63,23 +63,23 @@ char	*get_next_line(int fd)
 	return (ft_strdup(rtn));
 }
 
-#include <stdio.h>
-#include <fcntl.h>
-int main()
-{
-	int fd;
-	fd = open("t", O_RDONLY);
-	char *str;
-	str = get_next_line(fd);
-	printf("%s", str);
-	free(str);
-	while (str)
-	{
-		str = get_next_line(fd);
-		printf("%s", str);
-		free(str);
-	}
-	//system("leaks out");
-	close(fd);
-	return (0);
-}
+// #include <stdio.h>
+// #include <fcntl.h>
+// int main()
+// {
+// 	int fd;
+// 	fd = open("t", O_RDONLY);
+// 	char *str;
+// 	str = get_next_line(fd);
+// 	printf("%s", str);
+// 	free(str);
+// 	while (str)
+// 	{
+// 		str = get_next_line(fd);
+// 		printf("%s", str);
+// 		free(str);
+// 	}
+// 	//system("leaks out");
+// 	close(fd);
+// 	return (0);
+// }
