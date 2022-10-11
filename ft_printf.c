@@ -73,31 +73,30 @@ int ft_printf(char *f, ...)
     return ret;
 }
 
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char c = 'c';
+//         char *str = "hello";
+// 	int digit = 0;
+// 	unsigned int hex_x = -128;
 
-#include <stdio.h>
-int main(void)
-{
-	char c = 'c';
-        char *str = "hello";
-	int digit = 0;
-	unsigned int hex_x = -128;
+// 	ft_printf("-------------------------------------\n");
+// 	ft_printf("|    My ft_printf implimentation    |\n");
+// 	ft_printf("-------------------------------------\n");
+// 	ft_printf("Char is: %c\n", c);
+//         ft_printf("String is: %s\n", str);
+// 	ft_printf("Digit is: %d\n", digit);
+// 	ft_printf("Hexadecimal x is: %x\n", hex_x);
 
-	ft_printf("-------------------------------------\n");
-	ft_printf("|    My ft_printf implimentation    |\n");
-	ft_printf("-------------------------------------\n");
-	ft_printf("Char is: %c\n", c);
-        ft_printf("String is: %s\n", str);
-	ft_printf("Digit is: %d\n", digit);
-	ft_printf("Hexadecimal x is: %x\n", hex_x);
+// 	ft_printf("\n");
 
-	ft_printf("\n");
-
-	printf("-------------------------------------\n");
-	printf("|            Real printf            |\n");
-	printf("-------------------------------------\n");
-        printf("Char is: %c\n", c);\
-	printf("String is: %s\n", str);
-	printf("Digit is: %d\n", digit);
-	printf("Hexadecimal x is: %x\n", hex_x);
-	return 0;
-}
+// 	printf("-------------------------------------\n");
+// 	printf("|            Real printf            |\n");
+// 	printf("-------------------------------------\n");
+//         printf("Char is: %c\n", c);\
+// 	printf("String is: %s\n", str);
+// 	printf("Digit is: %d\n", digit);
+// 	printf("Hexadecimal x is: %x\n", hex_x);
+// 	return 0;
+// }
