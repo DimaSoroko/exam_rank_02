@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+**************************************************************************
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
@@ -63,23 +63,23 @@ char	*get_next_line(int fd)
 	return (ft_strdup(rtn));
 }
 
-// #include <stdio.h>
-// #include <fcntl.h>
-// int main()
-// {
-// 	int fd;
-// 	fd = open("t", O_RDONLY);
-// 	char *str;
-// 	str = get_next_line(fd);
-// 	printf("%s", str);
-// 	free(str);
-// 	while (str)
-// 	{
-// 		str = get_next_line(fd);
-// 		printf("%s", str);
-// 		free(str);
-// 	}
-// 	//system("leaks out");
-// 	close(fd);
-// 	return (0);
-// }
+#include <stdio.h>
+#include <fcntl.h>
+int main()
+{
+	int fd;
+	fd = open("t", O_RDONLY);
+	char *str;
+	str = get_next_line(fd);
+	printf("%s", str);
+	free(str);
+	while (str)
+	{
+		str = get_next_line(fd);
+		printf("%s", str);
+		free(str);
+	}
+	//system("leaks out");
+	close(fd);
+	return (0);
+}
